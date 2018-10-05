@@ -1,4 +1,4 @@
-
+let pic=document.getElementById('pic');
 let apiRequest = new XMLHttpRequest();
 let menu=document.getElementById('menu');
 let entree_1=document.getElementById('entree-1');
@@ -9,11 +9,13 @@ let entree_5=document.getElementById('entree-5');
 let entree_6=document.getElementById('entree-6');
 let entree_7=document.getElementById('entree-7');
 let entree_8=document.getElementById('entree-8');
+let daily=document.getElementById('dailyspec');
 
 
 document.onreadystatechange = function () {
     if (document.readyState == "interactive") {
       getMenu();
+
     }
   }
 
@@ -41,6 +43,7 @@ function onSuccess() {
           entree_6.innerHTML = JSON.stringify(menu_items[5]).slice(16, -2);
           entree_7.innerHTML = JSON.stringify(menu_items[6]).slice(16, -2);
           entree_8.innerHTML = JSON.stringify(menu_items[7]).slice(16, -2);
+          daily.innerHTML= JSON.stringify(menu_items[8]).slice(16, -2);
 
 
     }
