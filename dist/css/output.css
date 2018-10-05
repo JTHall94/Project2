@@ -8616,14 +8616,25 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+#pic {
+  display: block;
+  max-width: 600px;
+  margin: auto;
+  height: auto;
+}
+
 #menu {
   margin: 0px, auto;
   justify-content: center;
   padding: 0px;
-  max-width: 800px;
+  max-width: 600px;
 }
 
 #hours {
+  text-decoration: underline;
+}
+
+#menu-header {
   text-decoration: underline;
 }
 

@@ -29,19 +29,14 @@ function onSuccess() {
   if (apiRequest.status == "200") {
     let response = JSON.parse(apiRequest.responseText);
     let menu_items = response.menu_items;
-    console.log(response.menu_items);
-    entree_1.innerHTML = JSON.stringify(menu_items[0]);
-    entree_2.innerHTML = JSON.stringify(menu_items[1]);
-    entree_3.innerHTML = JSON.stringify(menu_items[2]);
-    entree_4.innerHTML = JSON.stringify(menu_items[3]);
-    entree_5.innerHTML = JSON.stringify(menu_items[4]);
-    entree_6.innerHTML = JSON.stringify(menu_items[5]);
-    entree_7.innerHTML = JSON.stringify(menu_items[6]);
-    entree_8.innerHTML = JSON.stringify(menu_items[7]);
-    /* Turn "off" error
-    error.style.display = 'none';
-     // Turn "on" output
-    output.style.display = 'block'; */
+    entree_1.innerHTML = JSON.stringify(menu_items[0]).slice(16, -2);
+    entree_2.innerHTML = JSON.stringify(menu_items[1]).slice(16, -2);
+    entree_3.innerHTML = JSON.stringify(menu_items[2]).slice(16, -2);
+    entree_4.innerHTML = JSON.stringify(menu_items[3]).slice(16, -2);
+    entree_5.innerHTML = JSON.stringify(menu_items[4]).slice(16, -2);
+    entree_6.innerHTML = JSON.stringify(menu_items[5]).slice(16, -2);
+    entree_7.innerHTML = JSON.stringify(menu_items[6]).slice(16, -2);
+    entree_8.innerHTML = JSON.stringify(menu_items[7]).slice(16, -2);
   } else {
     onError();
   }
