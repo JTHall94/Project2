@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Charmonman|Open+Sans');
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  background-color: #FCFFF5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#menu {
+  margin: 0px, auto;
+  justify-content: center;
+  padding: 0px;
+  max-width: 800px;
+
+}
+
+#hours {
+  text-decoration: underline;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Charmonman', cursive;
+}
