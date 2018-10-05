@@ -1,5 +1,6 @@
-#Installation Instructions
-##Complete these steps to allow for contributions to the project!
+# Installation Instructions
+
+## Complete these steps to allow for contributions to the project!
 
 1. If you haven't already, clone this repository down to your local machine. Make sure you git checkout into a new branch before starting your work. Once you push to github, submit a pull request so someone can check your work before merging it with the master branch.
 
